@@ -14,7 +14,7 @@ let socket = null;
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
 
-  socket = io("http://localhost:4006", {
+  socket = io("http://buivuong.cloud:4006", {
     auth: {
       token: jwtToken,
     },
